@@ -19,7 +19,7 @@ h2 {
 }
 
 h2, #currentdate {
-	color: yellow;
+	color: #00cecb;
 }
 
 main {
@@ -27,7 +27,7 @@ main {
 	border: 1px solid #999;
 	padding: 10px;
 	max-width: 500px;
-	background-color: #abe;
+	background-color: #fcaf58;
 	box-shadow: 0 0 30px;
 }
 
