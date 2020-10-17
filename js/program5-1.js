@@ -1,8 +1,8 @@
 function poundsToKilograms() {
     //input
     let pounds = parseFloat(document.getElementById("pounds").value);
-   //processing: multiply the number of pounds by formula k
+   //processing
    let output = pounds*0.45359237;
-   //output: display 
+   //output
    document.getElementById("output").innerHTML = output.toFixed(2) + " kilograms ";
 }
