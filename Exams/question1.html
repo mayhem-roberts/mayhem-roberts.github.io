@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meagan Roberts - Exam</title>
+</head>
+<body>
+  <header>
+      <h1>Employee Pay</h1>
+  </header>
+  <main>
+	<label>Number of Hours Worked: <input type="text" id="number1"></label>
+  <label>Number of Overtime Hours Worked: <input type="text" id="number2"></label>
+	<label><button onclick="employeePay()">Click</button></label>
+	<hr>
+	<p id="output"></p>
+</main>
+<footer>
+	&copy;2020 &bull; Meagan Roberts &bull; BYU-Idaho &bull; CIT 160
+</footer> 
+<script>
+  
+  function employeePay(){
+    //input
+    let number1 = parseFloat(document.getElementById('number1').value);
+    let number2 = parseFloat(document.getElementById('number2').value);
+    //processing
+    let gross = (number1 * 15) + (number2*22.50);
+    let tax = gross * .15;
+    let sum = gross + tax;
+    //output
+    document.getElementById("output").innerHTML = "$" + sum.toFixed(2);
+  }
+
+</script>
+</body>
+</html>

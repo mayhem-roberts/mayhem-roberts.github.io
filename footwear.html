@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>160m Template - Meagan Roberts</title>
+    <link rel="stylesheet" href="CSS/styles.css"> <!--external-->
+</head>
+<body>
+  <header>
+      <h1>Week 6: Weather Shoes</h1>
+      <h2>Meagan Roberts</h2>
+  </header>
+  <main>
+  <h3>Shoes for the Weather</h3>
+  <label for="weather">Select the weather:</label>
+
+<select name="weather" id="weather">
+    <option value="">--Select the Weather--</option>
+    <option value="hot">Hot</option>
+    <option value="rain">Rain</option>
+    <option value="snow">Snow</option>
+    <option value="unknown">Unknown</option>
+</select>
+	<label><button onclick="getShoes()">Get Shoes</button></label>
+	<hr>
+	<p id="shoes"></p>
+</main>
+<footer>
+	&copy;2020 &bull; Meagan Roberts &bull; BYU-Idaho &bull; CIT 160
+</footer> 
+<script src="js/footwear.js" defer></script>
+</body>
+</html>

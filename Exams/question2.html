@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meagan Roberts - Exam</title>
+</head>
+<body>
+  <header>
+      <h1>Volume of a Cylinder</h1>
+  </header>
+  <main>
+	<label>Height: <input type="text" id="num1"></label>
+  <label>Radius: <input type="text" id="num2"></label>
+	<label><button onclick="employeePay()">Click</button></label>
+	<hr>
+	<p id="output"></p>
+</main>
+<footer>
+	&copy;2020 &bull; Meagan Roberts &bull; BYU-Idaho &bull; CIT 160
+</footer> 
+<script>
+  
+  function employeePay(){
+    //input
+    let num1 = parseFloat(document.getElementById('num1').value);
+    let num2 = parseFloat(document.getElementById('num2').value);
+    //processing
+    let sum = Math.PI * num2 * num2 * num1;
+    //output
+    document.getElementById("output").innerHTML = " Volume: " + sum.toFixed(0);
+  }
+
+</script>
+</body>
+</html>
