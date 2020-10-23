@@ -8,7 +8,7 @@ function getShoes() {
   } else if (weather === "rain") {
       shoes = "galoshes";
   } else if (weather === "snow") {
-      shoes = "oots";
+      shoes = "boots";
   } else if (weather === "unknown") {
       shoes = "shoes";
   }
