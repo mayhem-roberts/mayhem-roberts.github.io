@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>160m Template - Meagan Roberts</title>
-    <link rel="stylesheet" href="CSS/styles.css"> <!--external-->
+    <link rel="stylesheet" href="CSS/stylesCal.css"> <!--external-->
 </head>
 <body>
   <header>
-      <h1>Week 3: Template</h1>
+      <h1>Week 6: Simple Claculator</h1>
       <h2>Meagan Roberts</h2>
   </header>
   <main>
-	<h3>Add Two Numbers</h3>
-	<label>Enter Number One: <input type="text" id="number1"></label>
-  <label>Enter Number Two: <input type="text" id="number2"></label>
-	<label><button onclick="addNumbers()">Add Numbers</button></label>
+	<h3>Claculator</h3>
+  <label><input type="text" id="num1"></label>
+  <select name="" id="operator">
+    <option value=""></option>
+    <option value="add">+</option>
+    <option value="sub">-</option>
+    <option value="mul">x</option>
+    <option value="div">/</option>
+  </select>
+  <label><input type="text" id="num2"></label>
+  <p><strong>=</strong></p>
+  <label><input type="text" id="answer"></label>
+  <label><button onclick="checkAnswer()">Check Answer</button></label>
 	<hr>
 	<p id="output"></p>
 </main>
@@ -23,7 +32,53 @@
 	&copy;2020 &bull; Meagan Roberts &bull; BYU-Idaho &bull; CIT 160
 </footer> 
 <script>
+  function checkAnswer() {
+    //input
+    let num1 = parseFloat(document.getElementById('num1').value);
+    let operator = document.getElementById('operator').value;
+    let num2 = parseFloat(document.getElementById('num2').value);
+    let answer = parseFloat(document.getElementById('answer').value);
+    //processing
+    let message;
+    let total;
 
+    switch (operator){
+      case 'add':
+        total = (num1 + num2);
+        if (answer == total){
+          message = "Correct"
+        } else {
+          message = "Incorrect"
+        }
+        break
+      case 'sub':
+      total = (num1 - num2);
+        if (answer == total){
+          message = "Correct"
+        } else {
+          message = "Incorrect"
+        }
+        break 
+      case 'mul': 
+      total = (num1 * num2);
+        if (answer == total){
+          message = "Correct"
+        } else {
+          message = "Incorrect"
+        }
+        break 
+      case 'div': 
+      total = (num1 / num2);
+        if (answer == total){
+          message = "Correct"
+        } else {
+          message = "Incorrect"
+        }
+    }
+    //output
+    document.getElementById('output').innerHTML = message + "";
+  
+  }
 </script>
 </body>
 </html>
