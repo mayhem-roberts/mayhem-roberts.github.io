@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>160m Template - Meagan Roberts</title>
+    <link rel="stylesheet" href="CSS/styles.css"> <!--external-->
+</head>
+<body>
+  <header>
+      <h2>Meagan Roberts</h2>
+  </header>
+  <main>
+	<label><button onclick="powers()">Powers of 2</button></label>
+	<hr>
+	<p id="output"></p>
+</main>
+<footer>
+	&copy;2020 &bull; Meagan Roberts &bull; BYU-Idaho &bull; CIT 160
+</footer> 
+<script>
+  function powers() {
+    //input
+    let message = "";
+    let math;
+    //output
+    for (let i = 0; i < 32; i++) {
+        math = Math.pow(2,i)
+        message += math + ", ";
+    }
+    //processing
+    document.getElementById("output").innerHTML= message;
+  }
+</script>
+</body>
+</html>
