@@ -21,20 +21,6 @@
 <footer>
 	&copy;2020 &bull; Meagan Roberts &bull; BYU-Idaho &bull; CIT 160
 </footer> 
-<script>
-  function doInputOutput() {
-    //get value of temp and speed
-    let temperature = parseFloat(document.getElementById("tempF").value);
-    let windspeed = parseFloat(document.getElementById("speed").value);
-    //call windChill function and store in windchill var
-    windchill = windChill(tempF, speed);
-    //output windchill
-    document.getElementById("output") = windchill; 
-  }
-  function windChill(tempF, speed) {
-
-  }
-
-</script>
+<script src="js/windChill.js"></script>
 </body>
 </html>
