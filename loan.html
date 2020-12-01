@@ -12,20 +12,19 @@
       <h2>Meagan Roberts</h2>
   </header>
   <main>
-	<label>Principal: <input type="text" id="num1"></label>
-  <label>Annual Rate: <input type="text" id="num2"></label>
+	<label>Amount borrowed(principal): <input type="text" id="num1"></label>
+  <label>Annual interest rate: <input type="text" id="num2"></label>
   <label>Number of years: <input type="text" id="num3"></label>
   <label>Periods per year: <input type="text" id="num4"></label>
-  
-	<label><button onclick="addNumbers()">Add Numbers</button></label>
-	<hr>
-	<p id="output"></p>
+  <label><button onclick="doPayment()">Compute payment</button></label>
+  <p id="output1"></p>
+  <label>Number of payments paid to date: <input type="text" id="num5"></label>
+  <label><button onclick="doBalance()">Compute payoff amount</button></label>
+	<p id="output2"></p>
 </main>
 <footer>
 	&copy;2020 &bull; Meagan Roberts &bull; BYU-Idaho &bull; CIT 160
 </footer> 
-<script>
-
-</script>
+<script src="js/loan.js"></script>
 </body>
 </html>
