@@ -10,7 +10,7 @@ function doFV() {
 }
 function computeFutureValue(principal, annualRate, years, periodsPerYear) {
   let a = principal;
-  let r = periodsPerYear/annualRate;
+  let r = annualRate/periodsPerYear;
   let n = periodsPerYear*years;
 
   f = a*(1 + r)**n;
