@@ -48,17 +48,15 @@ function test() {
 }
 
 function addEnds(list) {
-  let a = list[0];
-  let b = list[list.length -1];
-  sum = a + b;
+  let sum = list[0] + list[list.length -1];
+
   return sum; 
 }
 
 function getMiddle(list) {
   if (list.length % 2 == 0) {
     i = (list.length / 2);
-    x = list[i]
-    y = x - 1; 
+    y = list[i] - 1; 
     return y;
   } else {
     i = ((list.length + 1) / 2) - 1;
