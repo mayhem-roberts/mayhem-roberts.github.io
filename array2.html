@@ -58,13 +58,14 @@ return x;
 }
 
 function multiply(list, multiplier) { 
+  let x = [];
   for (let i = 0; i < list.length; i++) {
-  return list[i] * multiplier;
+  let y = list[i] * multiplier;
+  x.push(y);
   }
+  return x;
 }
 </script>
 </body>
 </html>
 
-
-  list.map(multiply)
